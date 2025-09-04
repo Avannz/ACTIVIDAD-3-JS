@@ -55,6 +55,8 @@ productos.push(producto_cinco);
 
 console.log(productos); 
 
+/* * -  Agregar un nuevo producto usando push(). * */
+
 var producto_seis = {
     id: 400,
     nombre: "Rocklet",
@@ -63,5 +65,14 @@ var producto_seis = {
 }
 
 productos.push(producto_seis);
+console.log("Hemos agregado correctamente el sexto elemento!");
 
+/* - Eliminar el último producto con pop(). */
+
+productos.pop();
+console.log("Hemos eliminado correctamente el ultimo elemento!");
 console.log(productos);
+
+
+/* (2) Usar filter() con una función anónima para obtener los productos cuyo stock sea mayor a 10. 
+Luego, guardar el resultado en un nuevo arreglo productosEnStock y mostrarlo.
